@@ -1,0 +1,57 @@
+@media only screen and (max-width: 450px) {
+	.intro {
+		width:250px;
+		height:300px;
+		margin: -100px 0 0 -125px;
+		.svgs {
+			height:100px;
+			svg {
+				width:250px;
+				height:100px;
+				&.ice-blue {
+					left:3px;
+				}
+			}
+		}
+		p.welcome {
+			font-size:18px;
+			padding:5px 0;
+		}
+		ul {
+			margin:10px auto;
+			li {
+				width:auto;
+				display:block;
+				padding:5px 0;
+				a {
+					font-size:16px;
+				}
+			}
+		}
+	}
+	.now-playing {
+		.info .title ul {
+			li.now, li.artist {
+				display:none;
+			}
+		}
+		.gui {
+			width:300px;
+			float:none;
+			margin:0 auto;
+			padding:5px 10px;
+			.progress {
+				width:47%
+			}
+			
+			a.stop {
+				margin:0;
+			}
+		}
+		.tracks-btn {
+			top:31px;
+			right:9px;
+		}
+	}
+
+}

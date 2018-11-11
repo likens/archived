@@ -1,0 +1,217 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}html{font-family:Helvetica,Arial,sans-serif;font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}a{background:0 0;outline:0}abbr[title]{border-bottom:1px dotted}strong{font-weight:700}img{border:0}figure{margin:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;-moz-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}
+*,*:after,*:before{box-sizing:border-box;line-height:normal}
+::selection{background:rgba(48,28,165,.3);}
+::-moz-selection{background:rgba(48,28,165,.3);}
+
+a {
+	-webkit-tap-highlight-color:rgba(48,28,165,.6);
+	-moz-tap-highlight-color:rgba(48,28,165,.6);
+	-o-tap-highlight-color:rgba(48,28,165,.6);
+	-ms-tap-highlight-color:rgba(48,28,165,.6);
+	tap-highlight-color:rgba(48,28,165,.6);
+	transition:all .1s ease;
+}
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+	width:100%;
+	background:url(./bg.jpg) no-repeat #0c2396;
+	background-attachment:fixed;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+}
+
+nav {
+	position:relative;
+	padding:75px 0 25px 0;
+	top:0;
+	left:50%;
+	margin-left:-500px;
+	width:1000px;
+}
+
+nav ul {
+	text-align:center;
+	padding:0;
+	margin:0;
+	font-size:0;
+	list-style:none;
+}
+
+nav li {
+	display:inline-block;
+}
+
+nav a {
+	text-decoration:none;
+	color:#fff;
+	display:block;
+	font-size:36px;
+	font-weight:bold;
+	font-family:'Playball',cursive;
+	padding:5px 15px;
+	border-radius:5px;
+	border:1px solid transparent;
+	text-shadow:-1px -1px 0 #62a9eb,1px -1px 0 #62a9eb,-1px 1px 0 #62a9eb,1px 1px 0 #62a9eb;
+	margin:0 5px;
+}
+
+nav a:hover {
+	background:#62a9eb;
+	text-shadow:-1px -1px 0 #0c2396,1px -1px 0 #0c2396,-1px 1px 0 #0c2396,1px 1px 0 #0c2396;
+	border-color:#0c2396;
+}
+
+main {
+	position:relative;
+}
+
+.wrap {
+	width:100%;
+	max-width:1000px;
+	margin:0 auto 15px auto;
+	padding:15px;
+	font-size:20px;
+	line-height:30px;
+	background:rgba(255,255,255,.8);
+	font-family:'Enriqueta', serif;
+	border-radius:5px;
+	border:1px solid #0c2396;
+}
+
+.wrap p {
+	margin:15px 0 0 0;
+}
+
+h1 {
+	color:#fff;
+	font-size:70px;
+	text-shadow:-1px -1px 0 #0c2396,1px -1px 0 #0c2396,-1px 1px 0 #0c2396,1px 1px 0 #0c2396;
+	font-family:'Playball',cursive;
+	text-align:center;
+	margin:0;
+	padding:30px 0;
+}
+
+.wrap h2 {
+	color:#fff;
+	font-size:50px;
+	text-shadow:-1px -1px 0 #0c2396,1px -1px 0 #0c2396,-1px 1px 0 #0c2396,1px 1px 0 #0c2396;
+	font-family:'Playball',cursive;
+	text-align:center;
+	margin:0;
+}
+
+.wrap h3 {
+	color:#ffffff;
+	font-size:35px;
+	font-family:'Playball',cursive;
+	text-shadow:-1px -1px 0 #0c2396,1px -1px 0 #0c2396,-1px 1px 0 #0c2396,1px 1px 0 #0c2396;
+	text-align:center;
+	margin:25px 0 -15px 0;
+}
+
+.wrap .directions {
+	text-align:center;
+	font-size:30px;
+}
+
+.wrap .directions a {
+	text-decoration:none;
+	font-weight:bold;
+	background:#0c2396;
+	color:#fff;
+	display:inline-block;
+	margin-top:10px;
+	padding:7px 14px;
+	line-height:1;
+}
+
+.wrap .directions a:hover {
+	background:#62a9eb;
+}
+
+.wrap .btn {
+	font-size:36px;
+	font-weight:bold;
+	background:#0c2396;
+	padding:5px 10px;
+	display:block;
+	width:150px;
+	text-align:center;
+	color:#fff;
+	border-radius:10px;
+	font-family:'Playball',cursive;
+	text-decoration:none;
+	margin:40px auto 0 auto;
+}
+
+.wrap .btn:hover {
+	background:#62a9eb;
+}
+
+.wrap img {
+	width:100%;
+	display:block;
+	margin:15px auto 0; 
+}
+
+@media all and (max-width:1000px) {
+	body {
+		position:static;
+	}
+	h1 {
+		font-size:50px;
+		padding:20px 0;
+		line-height:1;
+	}
+	main {
+		padding:0 10px;
+	}
+	.wrap {
+		margin-bottom:10px;
+		padding:10px;
+		font-size:16px;
+		line-height:22px;
+		background:rgba(255,255,255,.85);
+	}
+	.wrap p {
+		margin-top:10px;
+	}
+	
+	.wrap h2 {
+		font-size:40px;
+	}
+	
+	.wrap h3 {
+		font-size:25px;
+		margin:10px 0 -5px 0;
+	}
+	.wrap .directions {
+		font-size:22px;
+	}
+}
+
+@media all and (max-width:500px) {
+	h1 {
+		font-size:36px;
+	}
+	main {
+		padding:0 5px;
+	}
+	.wrap p {
+		margin-top:5px;
+	}
+	
+	.wrap h2 {
+		font-size:35px;
+	}
+	
+	.wrap h3 {
+		font-size:20px;
+	}
+	.wrap .directions {
+		font-size:18px;
+	}
+}

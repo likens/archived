@@ -1,0 +1,172 @@
+@media only screen and (max-width: 580px) {
+	nav.navigation {
+		ul {
+			li {
+				display:block;
+				width:100%;
+				margin:0 auto;
+				a {
+					padding:8px 0;
+					&:hover {
+						background:none;
+					}
+				}
+				&.current_page_item {
+					a {
+						&:hover {
+							background-color:@iceBlue;
+						}
+					}
+				}
+			}
+		}
+	}
+	div.sections {
+		section {
+			.content {
+				margin:15px auto;
+				h2 {
+					font-size:42px;
+					padding:20px 20px 10px 20px
+				}
+				p.text {
+					font-size:14px;
+				}
+			}
+			&#blog {
+				article {
+					padding:0 10px 40px 10px;
+					h3 {
+						margin:10px 0 0 0;
+						a {
+							font-size:20px;
+						}
+					}
+					.post-content {
+						font-size:14px;
+					}
+				}
+			}
+		}
+	}
+	section#contact, div.contact {
+		.social {
+			p {
+				font-size:18px;
+				margin:5px 0 10px 0;
+			}
+			a {
+				background-size:175px;
+				&.twitter {
+					background-position:-5px -30px;
+					width:40px;
+					height:34px;
+				}
+				&.facebook {
+					background-position:-50px -30px;
+					width:23px;
+					height:35px;
+					margin:0 6px 0 10px;
+				}
+				&.twitch {
+					background-position:-73px -32px;
+					width:100px;
+					height:36px;
+				}
+				&.futurefm {
+					background-position:-4px 0;
+					width:160px;
+					height:30px;
+					display:block;
+					margin:10px auto;
+				}
+				&.mixcloud {
+					background-position:0 -65px;
+					width:165px;
+					height:30px;
+					display:block;
+					margin:0 auto
+				}
+			}
+		}
+		.form {
+			form {
+				width:100%;
+				.block {
+					width:100%;
+					margin:0 0 10px 0;
+					float:none;
+					input[type="text"] {
+						width:85%;
+						margin:0 auto;
+					}
+					textarea {
+						width:85%;
+						margin:0 auto;
+					}
+					label {
+						width:85%;
+						margin:0 auto 4px auto;
+					}
+				}
+			}
+		}
+	}
+	.now-playing {
+		.gui {
+			width:430px;
+			float:none;
+			margin:0 auto;
+			padding:5px 10px;
+			.progress {
+				width:62%
+			}
+			a.stop {
+				margin:0;
+			}
+
+		}
+		.tracks-btn {
+			height:20px;
+			top:30px;
+			right:15px;
+			float:none;
+			position:absolute;
+			z-index:6000;
+			span {
+				color:transparent;
+			}
+			a {
+				padding:0;
+				&:before {
+					height:14px;
+					width:14px;
+					border-width:6px 0;
+					left:5px;
+				}
+				&:after {
+					width:3px;
+					height:14px;
+					border-width:6px 0;
+				}
+			}
+		}
+	}
+	section#mixes {
+		.featured {
+			section.mix-info {
+				h3.mix-name {
+					font-size:20px;
+				}
+			}
+		}
+		.list {
+			.fp-mix {
+				width:100%;
+				br {
+					display:none;
+				}
+			}
+		}
+	}
+}
